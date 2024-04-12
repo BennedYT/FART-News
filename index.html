@@ -23,14 +23,17 @@
 
   <script>
     window.addEventListener("resize", function (event) {
-      if ((window.innerWidth * 1.2) < window.innerHeight){
-        document.getElementById(addHeight).style.height = "10vh"
+      const viewportRatio = window.innerWidth / window.innerHeight;
+      const maxHeight = 70;
+    
+      let desiredHeight;
+      if (viewportRatio < 1) {
+        desiredHeight = Math.min((1 / viewportRatio) * 10, maxHeight) + "vh";
+      } else {
+        desiredHeight = "0";
       }
-    });
-    window.addEventListener("load", function (event) {
-      if ((window.innerWidth * 1.2) < window.innerHeight){
-        document.getElementById(addHeight).style.height = "10vh"
-      }
+    
+      document.getElementById("addHeight").style.height = desiredHeight;
     });
   </script>
 </html>
