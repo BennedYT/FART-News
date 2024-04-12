@@ -22,7 +22,7 @@
   </style>
 
   <script>
-    window.addEventListener("resize", function (event) {
+    function adjustHeight() {
       const viewportRatio = window.innerWidth / window.innerHeight;
       const maxHeight = 70;
     
@@ -30,11 +30,14 @@
       if (viewportRatio < 1) {
         desiredHeight = Math.min((1 / viewportRatio) * 10, maxHeight) + "vh";
       } else {
-        desiredHeight = "0";
+        desiredHeight = 0;
       }
     
       document.getElementById("addHeight").style.height = desiredHeight;
-    });
+    }
+    
+    window.addEventListener("resize", adjustHeight);
+    window.addEventListener("load", adjustHeight);
   </script>
 </html>
 
