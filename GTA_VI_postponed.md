@@ -5,7 +5,7 @@ permalink: /GTA_VI_postponed/
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=../" />
+    <meta http-equiv="refresh" content="0; URL=https://bennedyt.github.io/FART-News" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="GTA VI Postponed until 2028">
     <meta name="twitter:site" content="@fart_news_">
