@@ -1,6 +1,6 @@
 layout: page
-title: "GTA_VI_postponed"
-permalink: /GTA_VI_postponed
+title: "GTA VI postponed"
+permalink: /GTA_VI_postponed/
 
 <!DOCTYPE html>
 <html>
